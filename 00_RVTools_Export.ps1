@@ -43,7 +43,7 @@ if (-not (Get-Module -ListAvailable CredentialManager)) {
 }
 
 
-$vCentersList = @("vcenter01.example.com|PROD","vcenter02.example.com|MGMT","vcenter03.example.com|LAB")
+[string[]]$vCentersList = Get-Content -Path $LoginAcctFile
 
 foreach ($vCenterServer in $vCentersList) {
 	
