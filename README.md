@@ -57,7 +57,7 @@ This script uses **Windows Credential Manager**.
 
 Store credentials like this:
 
-```powershell
+powershell
 New-StoredCredential -Target "Creds_Prod" -UserName "username" -Password "password" -Persist LocalMachine
 
 Example mapping (inside script):
@@ -68,12 +68,12 @@ MGMT	Creds_Mgmt
 LAB 	Creds_Lab
 
 
-## ⚙️ How To Run
+##  How To Run
 .\00_RVTools_Export.ps1
 
 
 
-## Output**
+## Output
 
 The script generates:
 
@@ -86,7 +86,7 @@ Not reachable
 Missing credentials
 Optional ZIP archive of reports
 
-How It Works
+## How It Works
 Reads vCenter list from input file
 Maps environment to credential target
 Validates connectivity (ping test)
@@ -98,7 +98,7 @@ Validates output file
 Categorizes results
 Generates summary report
 
-⚙️ Requirements
+## ⚙️ Requirements
 Windows PowerShell 5.1 or higher
 RVTools installed
 VMware PowerCLI module
@@ -109,12 +109,12 @@ Install required modules:
 Install-Module VMware.PowerCLI
 Install-Module CredentialManager
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This script is provided as a reference implementation for infrastructure automation.
 Please review, test, and adapt it according to your environment before production use.
 
-🎯 Use Case
+## 🎯 Use Case
 
 This automation is useful for:
 
@@ -123,6 +123,6 @@ Data center operations teams
 Periodic inventory and audit reporting
 Migration and capacity planning activities
 
-👨‍💻 Author
+## 👨‍💻 Author
 Praveen K Pasham
 Developed as part of infrastructure automation workflows to improve efficiency and consistency in multi-vCenter environments
