@@ -124,5 +124,4 @@ Periodic inventory and audit reporting
 Migration and capacity planning activities
 
 ##  Author
-Praveen K Pasham
-Developed as part of infrastructure automation workflows to improve efficiency and consistency in multi-vCenter environments
+Praveen K Pasham : Developed as part of infrastructure automation workflows to improve efficiency and consistency in multi-vCenter environments
