@@ -68,12 +68,12 @@ MGMT	Creds_Mgmt
 LAB 	Creds_Lab
 
 
-How to Run
+## How to Run
 .\00_RVTools_Export.ps1
 
 
 
-**📊 Output**
+## Output**
 
 The script generates:
 
