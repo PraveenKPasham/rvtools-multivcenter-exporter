@@ -31,7 +31,9 @@ This project automates the process of collecting RVTools reports from multiple v
 
 ##  Project Structure
 ├── 00_RVTools_Export.ps1 # Main automation script
+
 ├── RVToolsPasswordEncryption.ps1 # Password encryption helper
+
 └── vCenterLoginAccount.txt # Input file with vCenter list
 
 
