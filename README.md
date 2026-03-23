@@ -66,7 +66,9 @@ This solution addresses those challenges by providing:
 ## 🏗️ Project Structure
 .
 ├── 00_RVTools_Export.ps1 # Main automation script
+
 ├── RVToolsPasswordEncryption.ps1 # Password encryption helper
+
 └── vCenterLoginAccount.txt # Input file (vCenter list)
 
 
