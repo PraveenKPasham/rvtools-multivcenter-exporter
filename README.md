@@ -4,13 +4,13 @@ A PowerShell automation script to execute RVTools exports across multiple VMware
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project automates the process of collecting RVTools reports from multiple vCenters using stored credentials. It helps reduce manual effort, standardize reporting, and improve operational efficiency in VMware environments.
 
 ---
 
-## ⚙️ Features
+##  Features
 
 - Execute RVTools exports across multiple vCenters
 - Support for multiple environments (PROD / MGMT / LAB)
@@ -29,7 +29,7 @@ This project automates the process of collecting RVTools reports from multiple v
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 ├── 00_RVTools_Export.ps1 # Main automation script
 ├── RVToolsPasswordEncryption.ps1 # Password encryption helper
 └── vCenterLoginAccount.txt # Input file with vCenter list
@@ -37,7 +37,7 @@ This project automates the process of collecting RVTools reports from multiple v
 
 ---
 
-## 📥 Input File Format
+##  Input File Format
 
 `vCenterLoginAccount.txt`
 
@@ -51,7 +51,7 @@ vcenter03.example.com|LAB
 
 ---
 
-## 🔐 Credential Setup
+##  Credential Setup
 
 This script uses **Windows Credential Manager**.
 
@@ -73,7 +73,7 @@ LAB 	Creds_Lab
 
 
 
-## Output
+##  Output
 
 The script generates:
 
@@ -86,7 +86,7 @@ Not reachable
 Missing credentials
 Optional ZIP archive of reports
 
-## How It Works
+##  How It Works
 Reads vCenter list from input file
 Maps environment to credential target
 Validates connectivity (ping test)
@@ -98,7 +98,7 @@ Validates output file
 Categorizes results
 Generates summary report
 
-## ⚙️ Requirements
+##  Requirements
 Windows PowerShell 5.1 or higher
 RVTools installed
 VMware PowerCLI module
@@ -109,12 +109,12 @@ Install required modules:
 Install-Module VMware.PowerCLI
 Install-Module CredentialManager
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This script is provided as a reference implementation for infrastructure automation.
 Please review, test, and adapt it according to your environment before production use.
 
-## 🎯 Use Case
+##  Use Case
 
 This automation is useful for:
 
@@ -123,6 +123,6 @@ Data center operations teams
 Periodic inventory and audit reporting
 Migration and capacity planning activities
 
-## 👨‍💻 Author
+##  Author
 Praveen K Pasham
 Developed as part of infrastructure automation workflows to improve efficiency and consistency in multi-vCenter environments
